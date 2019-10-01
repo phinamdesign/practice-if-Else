@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+    <script>
+       let time = Number(prompt("Tổng thời gian đàm thoại trong 1 tháng tính theo phút:"));
+       let charges;
+       let vnd = "VND";
+       let payMoney;
+       if (time>=3600){
+           charges=200;
+           payMoney = time*charges*60
+           alert("Cước điện thoại tháng này là : "+payMoney);
+       }else  if(time>=2400){
+           charges=150;
+           payMoney = time*charges*60
+           alert("Cước điện thoại tháng này là : "+payMoney);
+       }else {
+           charges=100;
+           payMoney = time*charges*60
+           alert("Cước điện thoại tháng này là : "+payMoney);
+       }
+    </script>
+</body>
+</html>
